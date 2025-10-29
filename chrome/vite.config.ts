@@ -14,7 +14,7 @@ export default defineConfig({
           dest: './',
         },
         {
-          src: '../../src/tags',
+          src: '../tags',
           dest: './',
         }
       ],

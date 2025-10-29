@@ -1,0 +1,97 @@
+{
+  "prompt_tags_classification": {
+    "scenario_tags": {
+      "title": "场景标签",
+      "description": "描述用户在特定领域或情境下使用提示词的目的。",
+      "categories": {
+        "office_and_professional": {
+          "category_name": "职场办公",
+          "labels": [
+            {"name": "沟通协作", "key": "communicationCollaboration", "description": "撰写邮件、会议纪要、即时消息等。"},
+            {"name": "文档报告", "key": "documentReport", "description": "撰写周报、项目报告、分析报告、PPT大纲等。"},
+            {"name": "项目管理", "key": "projectManagement", "description": "制定计划、任务分解、风险评估。"},
+            {"name": "人力资源", "key": "humanResources", "description": "撰写JD、设计面试题、绩效评估。"},
+            {"name": "专业领域", "key": "professionalFields", "description": "处理法律、财会、客服等特定专业事务。"}
+          ]
+        },
+        "creative_and_design": {
+          "category_name": "创意与设计",
+          "labels": [
+            {"name": "内容营销", "key": "contentMarketing", "description": "撰写博客文章、社交媒体帖子、广告文案。"},
+            {"name": "图像生成", "key": "imageGeneration", "description": "创作数字艺术、设计素材、产品效果图。"},
+            {"name": "品牌创意", "key": "brandIdentity", "description": "品牌命名、广告语构思、市场定位分析。"},
+            {"name": "视频脚本", "key": "videoScript", "description": "创作短视频、口播稿、YouTube脚本。"},
+            {"name": "SEO优化", "key": "seoOptimization", "description": "关键词研究、生成SEO友好的标题和内容。"}
+          ]
+        },
+        "technology_and_development": {
+          "category_name": "技术开发",
+          "labels": [
+            {"name": "代码编程", "key": "codeProgramming", "description": "生成代码片段、实现算法、编写脚本。"},
+            {"name": "代码辅助", "key": "codeAssistance", "description": "解释、调试、优化或重构代码。"},
+            {"name": "技术文档", "key": "technicalDocumentation", "description": "编写API文档、用户手册、开发日志。"},
+            {"name": "系统设计", "key": "systemDesign", "description": "进行架构设计、生成数据库模式。"}
+          ]
+        },
+        "learning_and_education": {
+          "category_name": "学习教育",
+          "labels": [
+            {"name": "知识问答", "key": "knowledgeQA", "description": "解释概念、回答问题、梳理知识点。"},
+            {"name": "学术研究", "key": "academicResearch", "description": "文献综述、论文润色、启发研究思路。"},
+            {"name": "教学设计", "key": "instructionalDesign", "description": "制定教学大纲、设计课堂活动、出题。"},
+            {"name": "语言学习", "key": "languageLearning", "description": "进行语法练习、口语模拟、翻译辅助。"}
+          ]
+        },
+        "life_and_planning": {
+          "category_name": "生活与规划",
+          "labels": [
+            {"name": "旅行计划", "key": "travelPlanning", "description": "制定行程、推荐景点、预估预算。"},
+            {"name": "健康生活", "key": "healthAndWellness", "description": "定制健身计划、生成健康食谱。"},
+            {"name": "职业发展", "key": "careerDevelopment", "description": "简历优化、模拟面试、职业路径建议。"},
+            {"name": "决策分析", "key": "decisionMaking", "description": "进行利弊分析、提供多角度建议。"}
+          ]
+        }
+      }
+    },
+    "intent_tags": {
+      "title": "意图标签",
+      "description": "描述希望AI执行的具体动作或任务类型。",
+      "categories": {
+        "creation": {
+          "category_name": "生成创作",
+          "labels": [
+            {"name": "内容生成", "key": "generate", "description": "从零开始或根据要求创作文本、代码等。"},
+            {"name": "创意构思", "key": "brainstorm", "description": "头脑风暴，产生多个想法、选项或大纲。"},
+            {"name": "视觉化", "key": "visualize", "description": "根据文本描述生成图像、图表或设计。"}
+          ]
+        },
+        "rewriting": {
+          "category_name": "编辑改写",
+          "labels": [
+            {"name": "润色优化", "key": "refine", "description": "改善语言表达，使其更流畅、专业或有力。"},
+            {"name": "转述改写", "key": "rewrite", "description": "用不同的措辞或风格重写内容，保留核心意思。"},
+            {"name": "篇幅调整", "key": "changeLength", "description": "对内容进行扩写或缩写。"},
+            {"name": "语言翻译", "key": "translate", "description": "在不同语言之间进行转换。"}
+          ]
+        },
+        "processing": {
+          "category_name": "处理分析",
+          "labels": [
+            {"name": "总结要点", "key": "summarize", "description": "将长篇内容精炼为核心摘要或要点。"},
+            {"name": "提取信息", "key": "extract", "description": "从文本中抽取指定类型的关键信息。"},
+            {"name": "分析洞察", "key": "analyze", "description": "进行情感判断、对比分析、逻辑推理等。"},
+            {"name": "分类归纳", "key": "classify", "description": "将信息按指定标准或自动发现的规律进行分类。"}
+          ]
+        },
+        "utility": {
+          "category_name": "格式与交互",
+          "labels": [
+            {"name": "解释说明", "key": "explain", "description": "对指定的概念、代码或文本进行详细解释。"},
+            {"name": "格式转换", "key": "format", "description": "按照指定格式（如JSON、Markdown、表格）输出内容。"},
+            {"name": "角色扮演", "key": "rolePlay", "description": "让AI扮演特定角色进行对话或执行任务。"}
+          ]
+        }
+      }
+    }
+  }
+}
