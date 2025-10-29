@@ -55,7 +55,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: chrome-extension
+        name: ai-prompt-hub-chrome-extension
         path: chrome/chrome-extension.zip
         if-no-files-found: error
         retention-days: 1 # <--- 这是修复的关键，将产物保留期设置为1天
@@ -77,7 +77,7 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v4
       with:
-        name: chrome-extension
+        name: ai-prompt-hub-chrome-extension
         path: ./artifact
 
     - name: Read version from manifest.json
@@ -117,7 +117,7 @@ jobs:
   #   - name: Download artifact
   #     uses: actions/download-artifact@v4
   #     with:
-  #       name: chrome-extension
+  #       name: ai-prompt-hub-chrome-extension
   #       path: ./artifact
 
   #   - name: Setup Node.js
